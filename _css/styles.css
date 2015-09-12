@@ -1,0 +1,269 @@
+/*-------------------------------------
+| fonts
+-------------------------------------*/
+@import url(<http://fonts.googleapis.com/css?family=Marck+Script);
+
+
+
+/*-------------------------------------
+| Resets
+-------------------------------------*/
+* {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*-------------------------------------
+| root
+-------------------------------------*/
+body { background-image: url(../_img/stars.jpg); margin: 0px; }
+
+.page-wrapper {
+	width: 90%;
+	max-width: 1200px;
+	min-width: 320px;
+	background-color: #eee;
+	padding: 25px;
+	margin: auto;
+}
+
+/*-------------------------------------
+| first children
+-------------------------------------*/
+.intro 		{ background-color: #3EABB3; padding: 10px; }
+.supporting { background-color: #47C7D2; padding: 10px; }
+.sidebar 	{ background-color: #3EABB3; padding: 10px; }
+
+
+/*-------------------------------------
+| .intro children
+-------------------------------------*/
+.intro header 		{ background-image: url(../_img/underwater2.jpg); padding: 10px; }
+.intro .summary 	{ background-image: url(../_img/underwater5.jpg); padding: 10px; }
+.intro .preamble 	{  background-image: url(../_img/underwater4.jpg); padding: 10px; }
+
+
+/*-------------------------------------
+| .supporting children
+-------------------------------------*/
+.supporting .explanation	{ background-image: url(../_img/underwater2.jpg); padding: 10px; }
+.supporting .participation 	{ background-image: url(../_img/underwater5.jpg); padding: 10px; }
+.supporting .benefits 		{ background-image: url(../_img/underwater5.jpg); padding: 10px; }
+.supporting .requirements 	{ background-image: url(../_img/underwater4.jpg); padding: 10px; }
+.supporting footer 			{  background-image: url(../_img/underwater4.jpg); padding: 10px; }
+
+/*-------------------------------------
+| .sidebar children
+-------------------------------------*/
+.sidebar .design-selection	{ background-image: url(../_img/underwater2.jpg); padding: 10px; }
+.sidebar .design-archives 	{ background-image: url(../_img/underwater5.jpg); padding: 10px; }
+.sidebar .zen-resources 	{ background-image: url(../_img/underwater4.jpg); padding: 10px; }
+
+
+/*-------------------------------------
+| Resoponsive
+-------------------------------------*/
+@media screen and (min-width:500px) {
+
+	body { background-color: #3EABB3; }
+
+
+}
+@media screen and (min-width:900px) {
+
+	body { background-color: white; }
+
+
+
+
+	.page-wrapper {
+		position: relative;
+		padding: 0px; 
+	}
+
+	.intro { width: 70%; }
+	.supporting { width: 70%; }
+
+	.sidebar {
+		width: 30%;
+
+		position: absolute;
+		right: 0px; 
+		top: 0px; 1
+	}
+}
+
+/*-------------------------------------
+| Side Bar Navigation
+-------------------------------------*/
+/*get rid of bulleted list*/
+nav ul { margin: 0px; padding: 0px; }
+nav li { list-style-type: none; display: inline; }
+
+.zen-resources ul { margin: 0px; padding: 0px; }
+.zen-resources li { list-style-type: none; display: inline; }
+
+
+/*-------------------------------------
+| Zen Resources and Archives
+-------------------------------------*/
+.zen-resources a, .design-archives a {
+	display: block;
+
+	line-height: 50px;
+	background-color: #19193E;
+	color: #fff;
+	margin-bottom: 5px;
+
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+.zen-resources a:hover, .design-archives a:hover 
+{ background-color: #240A23; 
+} 
+
+/*-------------------------------------
+| Select a Design
+-------------------------------------*/
+/*targets the design-name links*/
+.design-selection a.design-name {
+	display: block;
+	background-color: #19193E;
+
+	line-height: 50px;
+	color: #eee;
+	margin-bottom: 5px;
+
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 12px;
+	text-decoration: none;
+}
+.design-selection a.design-name:hover 
+{ background-color: #0B230C; 
+color: white;}
+
+/*this targets the "by"*/
+.design-selection li {
+	display: block;
+	color: white;
+	margin-bottom: 20px;
+	font-size: 12px;
+	text-align: right;
+	color: white;
+
+}
+/*targets the designer-name link*/
+.design-selection a.designer-name {
+	color: white;
+}
+
+
+/*-------------------------------------
+| H3 animated Backgrounds
+-------------------------------------*/
+h3 {
+	line-height: 100px;
+	font-size: 32px;
+	font-family: 'Marck Script', cursive;
+
+
+
+	background-color: #3339B8;
+	background-image: url(../_img/gold/gold.jpg);
+	color: #000066;
+	text-align: center;
+
+	background-position: left top;
+
+	transition: all 3s;
+
+}
+h3:hover { 
+	background-position: left bottom; 
+	transition: all .5s;
+	color: #494518;
+}
+
+.sidebar h3 { font-size: 18px; line-height: 50px; }
+
+
+
+
+
+
+/*-------------------------------------
+| Before and After
+-------------------------------------*/
+p{
+	color:white;
+}
+p:before {
+	content: "";
+	color:#eee;
+	font: helvetica;
+}
+p:after {
+	content: " continue reading...";
+	color:#eee;
+}
+
+.page-wrapper:before {
+	content: "";
+	display: block;
+	width: 250px;
+	height: 2550px;
+	background-image: url(../_img/);
+	
+
+	position: absolute;
+	left: -250px; 
+	top: 0px;
+	color:#eee;
+}
+.page-wrapper:after {
+	content: "";
+	display: block;
+	width: 250px;
+	height: 2550px;
+	background-image: url(../_img/);
+	
+
+	position: absolute;
+	right: -250px; 
+	top: 0px;
+	color:#eee;
+}
+
+/*-------------------------------------
+| Kellum Technique
+-------------------------------------*/
+h1 {
+	background-image: url(../_img/gold/gold.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: auto 100%;
+
+	/*width: 614px;*/
+	height: 100px;
+
+	/*font-size: 0px;*/
+
+	/*kellum*/
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	color: white;
+
+
+}
+
+
+
+
+
+

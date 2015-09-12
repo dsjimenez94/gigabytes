@@ -1,0 +1,109 @@
+<!doctype hmtl>
+<html>
+<head>
+	<link href='http://fonts.googleapis.com/css?family=Tulpen+One' rel='stylesheet' type='text/css'>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+			<div id="container">
+		<title>Swap</title>
+		<style type="text/css">
+
+		
+			div .tutor{
+				background-color: red;
+
+
+			}
+
+			p{
+				color: white;
+				background-color: red;
+				text-align: center;
+				font-size: 32px;
+			}
+
+			#swap {
+				width: 600px;
+				border: solid 10px #5E2957;
+				font-size: 0px;
+				margin: 20px auto;
+				}
+
+			#swap img.enlarged {}
+			#swap .gallery img {opacity: .5;}
+
+
+		</style>
+	</head>
+		
+		<header>GIGABITES</header>
+	<body>
+		<h1>Tutors and Study Sessions</h1>
+
+
+<h2>Reservations</h2>
+	<div id="tutor">
+
+		<p>At Giga-bites, it is our job to provide the best quality of service to our pupils. Not only are these tutors qualified, we also recruit college students who are in training as teachers. Depending on your selection of tutor, you are able to view the details of each tutor.  </p>
+		<p> As you browse, you are able to select, if wanted, schedule, or even schedule a day where you can meet the tutor before the teaching commences.</p>
+		<p> Remember, you as the pupil or parent have the right and plenty of time to select. </p> </div>
+
+
+
+		<div id="swap"> 
+
+		<img class = "enlarged" src="_img/_teachers/teacher1.png" height="350" width="500">
+			<div class="gallery">
+				<img data-large="_img/_teachers/teacher1.png" src="_img/_teachers/teacher1.png" height="123" width="180">
+				<img data-large="_img/_teachers/teacher2.png" src="_img/_teachers/teacher2.png"height="123" width="180">
+				<img data-large="_img/_teachers/teacher3.png" src="_img/_teachers/teacher3.png"height="123" width="180">
+				<img data-large="_img/_teachers/teacher4.png" src="_img/_teachers/teacher4.png"height="123" width="180">
+				<img data-large="_img/_teachers/teacher5.png" src="_img/_teachers/teacher5.png"height="123" width="180">
+				<img data-large="_img/_teachers/teacher6.png" src="_img/_teachers/teacher6.png"height="123" width="180">
+				<img data-large="_img/_teachers/teacher7.png" src="_img/_teachers/teacher7.png"height="123" width="180">
+				<img data-large="_img/_teachers/teacher8.png" src="_img/_teachers/teacher8.png"height="123" width="180">
+				<img data-large="_img/_teachers/teacher9.png" src="_img/_teachers/teacher9.png"height="123" width="180">
+				<img data-large="_img/_teachers/teacher10.png" src="_img/_teachers/teacher10.png"height="13" width="180">
+			</div>
+		</div>
+		
+	
+
+
+
+
+
+
+
+		<script type="text/javascript" src="_js/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript">
+			function swap_over(){
+				var newSrc = $(this).attr('src');
+				$('#swap img.enlarged').attr('src', newSrc);
+			}
+				$('#swap .gallery img').mouseover(swap_over);
+
+
+		</script>
+
+		<section>
+			<section> 
+			<a href="diner.html"> <img src="_img/icon1.gif" height="430" width="390"></a>
+			
+
+			<a href="tutor.html"><img src="_img/icon2.gif" height="430" width="390"></a>
+		
+
+			<a href="account.html"><img src="_img/icon4.gif" height="430" width="390"></a>
+			
+
+			<a href="index.html"><img src="_img/homeicon.gif" height="380" width="530"></a>
+		
+
+			</section>
+		</section>
+
+</div>
+		<footer>By Deborah Jimenez</footer>
+	</body>
+</html>

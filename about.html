@@ -1,0 +1,99 @@
+<!doctype hmtl>
+<html>
+<head>
+	<link href='http://fonts.googleapis.com/css?family=Tulpen+One' rel='stylesheet' type='text/css'>
+		<meta charset="utf-8">
+		<title>Responsive</title>
+
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<style>
+		img{
+			text-align: center;
+		}
+
+		p{
+			color:white;
+			background-color: red;
+			font-size: 32px;
+		}
+
+		#sliding {
+				width: 600px;
+				height: 300px;
+				border: solid 15px #1C521A;
+				margin: 25px auto;
+
+				position: relative;
+
+				overflow: hidden;
+			}
+
+			#sliding img {
+				position: absolute;
+				left: 0px;
+				top: 0px;
+			}
+
+			div .tutor{
+				background-color: red;
+
+
+			}
+
+			p{
+				color: white;
+				background-color: red;
+				text-align: center;
+				font-size: 32px;
+			}
+
+		</style>
+	</head>
+		<body>
+			<div id="container">
+			<header>About Giga-Bites</header>
+			<h1> Our goals and Relations: </h1>
+			
+
+			<div id="sliding">
+			<img src="_img/studygroup.jpg" height="480" width="720">
+			<img src="_img/eating .jpg" height="373" width="660">
+			<img src="_img/tutor.jpg" height="432" width="648">
+			<img src="_img/tutors.jpg" height="325" width="700">
+			<img src="_img/tutor copy.jpg" height="399" width="600">
+		</div>
+
+
+			<p>As a team and family, we welcome you Giga-bites: A place of learning without the boredom, agony, and improvement. 
+			Giga-bites is a family oriented tutoring business, meaning not only will we have one-on-one sessions with the pupil, but we also 
+			keep track of thier grades and classroom participations. With this and with your permission being the parent or adult, 
+			we will not only improve on your child's learning progress, but also along the way, we will help them progress , in thier lacks of socialization. </p>
+
+</div>
+
+<script type="text/javascript" src="_js/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript">
+
+			//greater than the first  -move off stage.
+			$('#sliding img:gt(0)').css({'left':'600px'});
+			
+			function slide_animate() {
+				$('#sliding img:eq(1)').delay(2000).animate({'left':'0px'}, 1000);
+				$('#sliding img:eq(0)').delay(2000).animate({'left':'-600px'}, 1000, whenDone);
+
+				function whenDone() {
+					$('#sliding img:eq(0)')
+						.css({'left':'600px'})
+						.appendTo('#sliding');
+
+					slide_animate(); //continue party
+				}
+			}
+
+			slide_animate(); //start party
+
+		</script>
+
+		<footer>By Deborah Jimenez</footer>
+	</body>
+</html>

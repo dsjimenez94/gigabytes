@@ -1,0 +1,188 @@
+<!doctype hmtl>
+<html>
+<head>
+	<link href='http://fonts.googleapis.com/css?family=Tulpen+One' rel='stylesheet' type='text/css'>
+		<meta charset="utf-8">
+		<title>Responsive</title>
+
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+	</head>
+		<body>
+			<div id="container">
+			<header>Giga-Bites</header>
+			<!DOCTYPE html>
+<html>
+	<head>
+		<title>Sliding :: Slideshows</title>
+		<style type="text/css">
+
+			#sliding {
+				width: 600px;
+				height: 300px;
+				border: solid 15px #1C521A;
+				margin: 25px auto;
+
+				position: relative;
+
+				overflow: hidden;
+			}
+
+			#sliding img {
+				position: absolute;
+				left: 0px;
+				top: 0px;
+			}
+
+			section{
+				
+			}
+
+			h1{
+				color: white;
+				text-align: center;
+				font-size: 70px;
+				font-family: 'Tulpen One', cursive;
+				background-image: url(../_img/stars.jpg);
+				
+			}
+			h2{
+				color: white;
+				text-align: center;
+				font-family: 'Tulpen One', cursive;
+				font-size: 70px;
+			}
+
+			p{
+				color: white;
+				background-color: red;
+				text-align: center;
+				font-size: 35px;
+			}
+
+			#faded{
+				width: 800px;
+				
+				font-size: 0px;
+				margin: 20px auto;
+			}
+			
+
+
+			#faded .item{
+				width: 300px;
+				height: 200px;
+				border: solid 5px #1F1E5E;
+				
+				position: relative;
+
+				display: inline-block;
+
+				}
+
+			#faded .item img {
+				position: absolute;
+				left: 0px;
+				top: 0px;
+				}
+
+			#faded .item img.color{
+				opacity: 0; }
+		</style>
+	</head>
+	<body>
+
+	<h1>Dining and Reservations</h1>
+	<div>
+		
+
+		<div id="faded">
+
+			<div class= "item">
+		<img class="gray" src="_img/food1 gray.jpg"height="200" width="400">
+		<img class="color" src="_img/food1.jpg"height="200" width="400">
+		</div>
+
+
+		<div class= "item">
+		<img class="gray" src="_img/food2 gray.jpg"height="200" width="400">
+		<img class="color" src="_img/food2.jpg"height="200" width="400">
+		</div>
+
+		<div class= "item">
+		<img class="gray" src="_img/food3 gray.jpg"height="200" width="400">
+		<img class="color" src="_img/food3.jpg"height="200" width="400">
+		</div>
+
+		<div class= "item">
+		<img class="gray" src="_img/food 4 gray.jpg"height="200" width="400">
+		<img class="color" src="_img/food 4.jpg"height="200" width="400">
+		</div>
+
+		<div class= "item">
+		<img class="gray" src="_img/food5 gray.jpg"height="200" width="400">
+		<img class="color" src="_img/food5.jpg"height="200" width="400">
+		</div>
+
+		</div>
+
+		<div>
+
+
+
+		<h2>Reservations</h2>
+	<div id="reservations">
+
+		<p>Welcome to Giga-bites, the place for learning, socializing, and developing. </p>
+		<p> As a family oritended company, we make sure every member has the same amount of fairness, time, and comfort. Therefore, our learning program has an hour schedule.<p> We like to stick to these rules to respect others. Like Tutoring services, Study groups are required schedule ahead of time, they can either come in, mark the calendar below on this website, or can go to our App. </p> We Require 24hrs in advance to schedule just like our tutoring services. For dining, groups of 1-4 are always welcome.</p> </div>
+
+		<div id="date">
+
+		<img src="_img/calendar.png" height="599" width="600">
+			
+		</div>
+
+		<div id="reservations">
+		</div>
+
+		<script type="text/javascript" src="_js/jquery-1.11.0.min.js"></script>
+		<script type="text/javascript">
+
+			//greater than the first  -move off stage.
+			function fade_over () {
+					$(this).find('.color').stop(true).animate({'opacity':'1'},400);
+
+				}
+
+				$('#faded .item').mouseover(fade_over);
+
+				function fade_out () {
+					$(this).find('.color').stop(true).animate({'opacity':'0'},400);
+
+				}
+
+				$('#faded .item').mouseout(fade_out);
+
+				</script>
+
+
+		</script>
+ 
+			<a href="about.html"> <img src="_img/icon2.gif" height="430" width="390"></a>
+			
+
+			<a href="tutor.html"><img src="_img/icon3.gif" height="430" width="390"></a>
+		
+
+			<a href="account.html"><img src="_img/icon4.gif" height="430" width="390"></a>
+			
+
+			<a href="index.html"><img src="_img/homeicon.gif" height="380" width="530"></a>
+		
+
+			</section>
+		</section>
+
+</div>
+		<footer>By Deborah Jimenez</footer>
+	</body>
+</html>
