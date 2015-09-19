@@ -17,7 +17,7 @@
 /*-------------------------------------
 | root
 -------------------------------------*/
-body { background-image: url(../_img/stars.jpg); margin: 0px; }
+body { background-image: url(../img/stars.jpg); margin: 0px; }
 
 .page-wrapper {
 	width: 90%;
@@ -39,26 +39,26 @@ body { background-image: url(../_img/stars.jpg); margin: 0px; }
 /*-------------------------------------
 | .intro children
 -------------------------------------*/
-.intro header 		{ background-image: url(../_img/underwater2.jpg); padding: 10px; }
-.intro .summary 	{ background-image: url(../_img/underwater5.jpg); padding: 10px; }
-.intro .preamble 	{  background-image: url(../_img/underwater4.jpg); padding: 10px; }
+.intro header 		{ background-image: url(../img/underwater2.jpg); padding: 10px; }
+.intro .summary 	{ background-image: url(../img/underwater5.jpg); padding: 10px; }
+.intro .preamble 	{  background-image: url(../img/underwater4.jpg); padding: 10px; }
 
 
 /*-------------------------------------
 | .supporting children
 -------------------------------------*/
-.supporting .explanation	{ background-image: url(../_img/underwater2.jpg); padding: 10px; }
-.supporting .participation 	{ background-image: url(../_img/underwater5.jpg); padding: 10px; }
-.supporting .benefits 		{ background-image: url(../_img/underwater5.jpg); padding: 10px; }
-.supporting .requirements 	{ background-image: url(../_img/underwater4.jpg); padding: 10px; }
-.supporting footer 			{  background-image: url(../_img/underwater4.jpg); padding: 10px; }
+.supporting .explanation	{ background-image: url(../img/underwater2.jpg); padding: 10px; }
+.supporting .participation 	{ background-image: url(../img/underwater5.jpg); padding: 10px; }
+.supporting .benefits 		{ background-image: url(../img/underwater5.jpg); padding: 10px; }
+.supporting .requirements 	{ background-image: url(../img/underwater4.jpg); padding: 10px; }
+.supporting footer 			{  background-image: url(../img/underwater4.jpg); padding: 10px; }
 
 /*-------------------------------------
 | .sidebar children
 -------------------------------------*/
-.sidebar .design-selection	{ background-image: url(../_img/underwater2.jpg); padding: 10px; }
-.sidebar .design-archives 	{ background-image: url(../_img/underwater5.jpg); padding: 10px; }
-.sidebar .zen-resources 	{ background-image: url(../_img/underwater4.jpg); padding: 10px; }
+.sidebar .design-selection	{ background-image: url(../img/underwater2.jpg); padding: 10px; }
+.sidebar .design-archives 	{ background-image: url(../img/underwater5.jpg); padding: 10px; }
+.sidebar .zen-resources 	{ background-image: url(../img/underwater4.jpg); padding: 10px; }
 
 
 /*-------------------------------------
@@ -174,7 +174,7 @@ h3 {
 
 
 	background-color: #3339B8;
-	background-image: url(../_img/gold/gold.jpg);
+	background-image: url(../img/gold/gold.jpg);
 	color: #000066;
 	text-align: center;
 
@@ -217,7 +217,7 @@ p:after {
 	display: block;
 	width: 250px;
 	height: 2550px;
-	background-image: url(../_img/);
+	background-image: url(../img/);
 	
 
 	position: absolute;
@@ -230,7 +230,7 @@ p:after {
 	display: block;
 	width: 250px;
 	height: 2550px;
-	background-image: url(../_img/);
+	background-image: url(../img/);
 	
 
 	position: absolute;
@@ -243,7 +243,7 @@ p:after {
 | Kellum Technique
 -------------------------------------*/
 h1 {
-	background-image: url(../_img/gold/gold.jpg);
+	background-image: url(../img/gold/gold.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: auto 100%;
